@@ -7,6 +7,7 @@ interface Props {
   isCheckBox: boolean;
   addSelectedTask?: any;
   removeSelectedTask?: any;
+  selectedTasks?: string[];
 }
 
 const TaskCard: React.FC<Props> = ({
@@ -14,6 +15,7 @@ const TaskCard: React.FC<Props> = ({
   isCheckBox,
   addSelectedTask,
   removeSelectedTask,
+  selectedTasks,
 }) => {
   const handleCheckClick: any = (e: any) => {
     const { checked } = e.target;
@@ -29,6 +31,7 @@ const TaskCard: React.FC<Props> = ({
           <input
             style={{ marginTop: "3em" }}
             type="checkbox"
+            checked={!!selectedTasks?.includes(task.id)}
             onClick={handleCheckClick}
           />
         )}

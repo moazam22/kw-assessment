@@ -3,7 +3,6 @@ import { BrowserRouter } from "react-router-dom";
 import { Task } from "./utils/Interface";
 import Views from "./Components/Views/Views";
 import Navbar from "./Components/Navbar/Navbar";
-import GlobalStyles from "./Components/Styles/Global";
 
 const App: React.FC = () => {
   const [tasks, setTasks] = useState<Array<Task>>([]);
@@ -33,7 +32,6 @@ const App: React.FC = () => {
 
   return (
     <BrowserRouter>
-      <GlobalStyles />
       <div style={{ minHeight: "100vh", width: "100%" }}>
         <Navbar />
         <Views

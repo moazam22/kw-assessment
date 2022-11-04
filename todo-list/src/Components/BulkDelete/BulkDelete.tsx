@@ -42,6 +42,7 @@ const BulkDelete: React.FC<Props> = ({
                 isCheckBox={true}
                 addSelectedTask={addSelectedTask}
                 removeSelectedTask={removeSelectedTask}
+                selectedTasks={selectedTasks}
               />
             );
           })
