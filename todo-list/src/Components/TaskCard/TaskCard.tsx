@@ -32,7 +32,7 @@ const TaskCard: React.FC<Props> = ({
             style={{ marginTop: "3em" }}
             type="checkbox"
             checked={!!selectedTasks?.includes(task.id)}
-            onClick={handleCheckClick}
+            onChange={handleCheckClick}
           />
         )}
       </Card>
