@@ -32,7 +32,7 @@ const CreateTask: React.FC<Props> = ({ setTasks, tasks }) => {
 
   return (
     <Container>
-      <h1>CreateTaks</h1>
+      <h1>Create Task</h1>
       <div>
         <label style={{ fontWeight: 500 }}>Name: </label>
         <input
